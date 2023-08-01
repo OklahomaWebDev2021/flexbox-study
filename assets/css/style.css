@@ -1,0 +1,133 @@
+:root {
+  --primary: rgb(129, 195, 240);
+  --secondary: rgb(108, 164, 201);
+  --third: rgb(99, 149, 184);
+}
+
+* {
+  margin: 0;
+}
+header {
+  position: relative;
+}
+ul {
+  margin-bottom: 45px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+footer > p {
+  font-size: 0.75em;
+}
+
+.title-format {
+  font-family: 'Tektur', cursive;
+}
+.text-format {
+  font-family: 'Roboto', sans-serif;
+}
+
+.header-img {
+  width: 100%;
+  object-fit: cover;
+  object-position: 0 25%;
+}
+.header-title {
+  position: absolute;
+  top: 35px;
+  left: 25px;
+  color: var(--primary);
+  font-family: 'Tektur', cursive;
+  font-size: 3.25rem;
+}
+.image-disclaimer {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  list-style: none;
+}
+.navitem {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: var(--primary);
+}
+.main {
+  margin: 0 45px;
+}
+.main-title {
+  background-color: var(--secondary);
+  padding: 10px;
+  margin: 25px 0;
+  font-family: 'Tektur', cursive;
+  font-size: 2.5rem;
+  border-radius: 5px;
+  text-align: center;
+}
+.sub-title {
+  background-color: var(--third);
+  padding: 15px;
+  font-family: 'Tektur', cursive;
+  font-size: 2rem;
+  border-radius: 5px;
+  margin: 45px 0 25px 0;
+  text-align: center;
+}
+.page-text {
+  margin-bottom: 15px;
+}
+.item-sep {
+  width: 100%;
+}
+.item-sep-img {
+  width: 100%;
+}
+
+.sub-item-format {
+  margin-bottom: 25px;
+  margin-top: 35px;
+}
+.sub-sub-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.emphasis {
+  font-weight: bold;
+}
+/* @media (max-width: 680px) {
+  .navbar {
+    flex-direction: column;
+  }
+} */
+
+/* Container Examples */
+.example-one-container {
+  display: flex;
+  gap: 15px;
+  background-color: black;
+  margin: 25px 0;
+}
+
+.example-one-items {
+  background-color: var(--primary);
+  color: white;
+  width: 100px;
+  height: 55px;
+}
+.example-one-item-one {
+}
+
+.img-section {
+  text-align: center;
+  margin: 25px 0;
+}
