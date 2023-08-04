@@ -1,0 +1,34 @@
+.properties {
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  justify-content: center;
+}
+.property {
+  flex: 1;
+  padding: 20px 10px;
+  min-width: 150px;
+  max-width: 200px;
+  align-items: center;
+  background-color: rgb(222, 207, 187);
+}
+.property-title {
+  font-size: 1.15rem;
+  font-family: 'Tektur', cursive;
+  margin-bottom: 10px;
+}
+.property-btn {
+  background-color: var(--primary);
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 900px) {
+  .property {
+    width: 100%;
+  }
+}
