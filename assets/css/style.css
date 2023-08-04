@@ -148,3 +148,9 @@ footer > p:last-child {
   text-align: center;
   margin: 25px 0;
 }
+
+@media (max-width: 960px) {
+  .header-title {
+    font-size: 1rem;
+  }
+}
