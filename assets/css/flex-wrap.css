@@ -1,0 +1,40 @@
+.example-one-container {
+  display: flex;
+  gap: 10px;
+  background-color: black;
+  flex-wrap: nowrap;
+}
+.example-one-items {
+  /* flex: 1 1; */
+  background-color: var(--primary);
+  padding: 5px;
+  width: 250px;
+  min-width: 150px;
+}
+
+.example-two-container {
+  display: flex;
+  gap: 10px;
+  background-color: black;
+  flex-wrap: wrap;
+}
+.example-two-items {
+  /* flex: 1 1; */
+  background-color: var(--primary);
+  padding: 5px;
+  width: 250px;
+  min-width: 150px;
+}
+
+.example-three-container {
+  display: flex;
+  gap: 10px;
+  background-color: black;
+  flex-wrap: wrap-reverse;
+}
+.example-three-items {
+  background-color: var(--primary);
+  padding: 5px;
+  width: 250px;
+  min-width: 150px;
+}

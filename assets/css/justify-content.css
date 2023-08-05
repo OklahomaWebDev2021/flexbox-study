@@ -1,0 +1,75 @@
+.example-containers {
+  margin-bottom: 25px;
+}
+.example-one-container {
+  display: flex;
+  gap: 15px;
+  background-color: black;
+  justify-content: flex-start;
+}
+.example-one-items {
+  background-color: var(--primary);
+  color: white;
+  width: 100px;
+  height: 55px;
+}
+.example-two-container {
+  display: flex;
+  gap: 15px;
+  background-color: black;
+  justify-content: flex-end;
+}
+.example-two-items {
+  background-color: var(--primary);
+  color: white;
+  width: 100px;
+  height: 55px;
+}
+.example-three-container {
+  display: flex;
+  gap: 15px;
+  background-color: black;
+  justify-content: center;
+}
+.example-three-items {
+  background-color: var(--primary);
+  color: white;
+  width: 100px;
+  height: 55px;
+}
+.example-four-container {
+  display: flex;
+  gap: 15px;
+  background-color: black;
+  justify-content: space-around;
+}
+.example-four-items {
+  background-color: var(--primary);
+  color: white;
+  width: 100px;
+  height: 55px;
+}
+.example-five-container {
+  display: flex;
+  gap: 15px;
+  background-color: black;
+  justify-content: space-between;
+}
+.example-five-items {
+  background-color: var(--primary);
+  color: white;
+  width: 100px;
+  height: 55px;
+}
+.example-six-container {
+  display: flex;
+  gap: 15px;
+  background-color: black;
+  justify-content: space-evenly;
+}
+.example-six-items {
+  background-color: var(--primary);
+  color: white;
+  width: 100px;
+  height: 55px;
+}

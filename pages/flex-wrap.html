@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex-Wrap Property</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Tektur:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/flex-wrap.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        class="header-img"
+        src="../assets/images/glowing-blue-lines-dark-background.jpg"
+        alt=""
+      />
+      <h1 class="header-title primary-color">A Flexbox Study</h1>
+      <ul class="navbar">
+        <li class="navitems">
+          <a class="navitem primary-color" href="../index.html">Home</a>
+        </li>
+        <li class="navitems">
+          <a class="navitem primary-color" href="./container-properties.html"
+            >Container Properties</a
+          >
+        </li>
+        <li class="navitems">
+          <a class="navitem primary-color" href="">Item Properties</a>
+        </li>
+        <li class="navitems">
+          <a class="navitem primary-color" href="">Contact Us</a>
+        </li>
+        <li class="navitems">
+          <a class="navitem primary-color" href="">About Us</a>
+        </li>
+      </ul>
+      <a
+        class="image-disclaimer primary-color"
+        href="https://www.freepik.com/free-photo/glowing-blue-lines-dark-background_5083073.htm#query=technology&position=49&from_view=keyword&track=sph"
+        >Image by starline on Freepik</a
+      >
+    </header>
+    <section class="main">
+      <div class="main-title">
+        <h2>Flex-Wrap Property</h2>
+      </div>
+      <p class="text-format page-text">
+        The flex-wrap property will tell flexbox how to handle flex items that
+        move off of the screen in a single row. This is seen when we have
+        responsive design and a webpage designed for the desktop or laptop is
+        viewed on a tablet or phone. Using this property will move the offending
+        items to a line where they will fit.
+      </p>
+      <p class="text-format page-text">
+        They are as follows:
+        <ul class="text-format page-text">
+          <li>Nowrap</li>
+          <li>Wrap</li>
+          <li>Wrap-reverse</li>
+        </ul>
+      </p>
+      <p class="text-format page-text highlight">
+        <span class="emphasis">NOTE:</span> If the items are not flexible, the flex-wrap property will not work.
+      </p>
+      <div class="example-1">
+        <div class="sub-title">
+            <h3 class="general-format">Nowrap Value</h3>
+        </div>
+        <p class="text-format page-text">This is the default behavior of the flex-wrap property when used within the flexbox container. The items start at the left and move from left to right.</p>
+        <p class="text-format page-text"></p>
+
+        <div class="example-one-container">
+            <div class="example-one-item-one example-one-items">Item 1</div>
+            <div class="example-one-item-two example-one-items">Item 2</div>
+            <div class="example-one-item-three example-one-items">Item 3</div>
+            <div class="example-one-item-four example-one-items">Item 4</div>
+            <div class="example-one-item-five example-one-items">Item 5</div>
+        </div>
+      </div>
+      <div class="item-sep">
+        <img
+        src="../assets/images/theme/two-color-trim.png"
+        alt=""
+        class="item-sep-img"
+      /> 
+      </div>
+      <div class="example-2">
+        <div class="sub-title">
+            <h3 class="general-format">Wrap Value</h3>
+        </div>
+        <p class="text-format page-text">This wraps the flex items within the flex container. It will start on the top left and wrap left to right and top to bottom.</p>
+        <p class="text-format page-text"></p>
+
+        <div class="example-two-container">
+            <div class="example-two-item-one example-two-items">Item 1</div>
+            <div class="example-two-item-two example-two-items">Item 2</div>
+            <div class="example-two-item-three example-two-items">Item 3</div>
+            <div class="example-two-item-four example-two-items">Item 4</div>
+            <div class="example-two-item-five example-two-items">Item 5</div>
+        </div>
+      </div>
+      <div class="item-sep">
+        <img
+        src="../assets/images/theme/two-color-trim.png"
+        alt=""
+        class="item-sep-img"
+      /> 
+      </div>
+      <div class="example-3">
+        <div class="sub-title">
+            <h3 class="general-format">Wrap-reverse Value</h3>
+        </div>
+        <p class="text-format page-text">This wraps the flex items within the flex container. It will start on the bottom left and wrap left to right and bottom to top.</p>
+        <p class="text-format page-text"></p>
+
+        <div class="example-three-container">
+            <div class="example-three-item-one example-three-items">Item 1</div>
+            <div class="example-three-item-two example-three-items">Item 2</div>
+            <div class="example-three-item-three example-three-items">Item 3</div>
+            <div class="example-three-item-four example-three-items">Item 4</div>
+            <div class="example-three-item-five example-three-items">Item 5</div>
+        </div>
+      </div>
+      <div class="item-sep">
+        <img
+        src="../assets/images/theme/two-color-trim.png"
+        alt=""
+        class="item-sep-img"
+      /> 
+      </div>
+    </section>
+    <footer>
+      <p class="text-format page-text">created by Michael Martens</p>
+      <p class="text-format footer-format">&copy;copyright 2023</p>
+  </footer>
+  </body>
+</html>
