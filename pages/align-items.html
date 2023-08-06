@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Align Items</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Tektur:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/align-items.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        class="header-img"
+        src="../assets/images/glowing-blue-lines-dark-background.jpg"
+        alt=""
+      />
+      <h1 class="header-title primary-color">A Flexbox Study</h1>
+      <ul class="navbar">
+        <li class="navitems">
+          <a class="navitem primary-color" href="../index.html">Home</a>
+        </li>
+        <li class="navitems">
+          <a class="navitem primary-color" href="./container-properties.html"
+            >Container Properties</a
+          >
+        </li>
+        <li class="navitems">
+          <a class="navitem primary-color" href="">Item Properties</a>
+        </li>
+        <li class="navitems">
+          <a class="navitem primary-color" href="">Contact Us</a>
+        </li>
+        <li class="navitems">
+          <a class="navitem primary-color" href="">About Us</a>
+        </li>
+      </ul>
+      <a
+        class="image-disclaimer primary-color"
+        href="https://www.freepik.com/free-photo/glowing-blue-lines-dark-background_5083073.htm#query=technology&position=49&from_view=keyword&track=sph"
+        >Image by starline on Freepik</a
+      >
+    </header>
+    <section class="main">
+        <div class="main-title">
+            <h2 class="general-forrmat">Align-Items Property</h2>
+        </div>
+            <p class="text-format page-text">
+            The align-items property can move the flexbox items around inside of a
+            parent container such as a div element. This will line up flex items
+            across the cross axis.
+            </p>
+            <p class="text-format page-text">
+            For flex-direction equal to row, this will line up flex items top to bottom.</p>
+            <div class="code-img-section">
+                <img src="../assets/images/row-main-cross axis.png" alt="" class="code-img" width="450px">
+            </div>
+            <p class="text-format page-text">For flex-direction equal to column, this will line up flex items
+            left and right. Below, is an example of the axis for flex-direction set
+            to row.
+            </p>
+            <div class="code-img-section">
+                <img src="../assets/images/column-main-cross axis.png" alt="" class="code-img" width="350px">
+            </div>
+            <p class="text-format page-text">
+                They are as follows:
+                <ul class="text-format page-text">
+                    <li>Normal</li>
+                    <li>Stretch</li>
+                    <li>Center</li>
+                    <li>Flex-start</li>
+                    <li>Flex-end</li>
+                </ul>
+            </p>
+        </p>
+        <div class="example-1">
+            <div class="sub-title">
+                <h3 class="general-format">Normal Value</h3>
+            </div>
+            <p class="text-format page-text">This is the default behavior of the align-items property when used within the flexbox container. The items start at the top left and move from left to right to form a &quot;row&quot;. The items will stretch the items to fill the container along the cross axis. </p>
+            <div class="example-one-container example-containers">
+                <div class="example-one-item-one example-one-items">Item 1</div>
+                <div class="example-one-item-two example-one-items">Item 2</div>
+                <div class="example-one-item-three example-one-items">Item 3</div>
+    
+            </div>
+        </div>
+        <div class="item-sep">
+            <img
+            src="../assets/images/theme/two-color-trim.png"
+            alt=""
+            class="item-sep-img"
+          /> 
+        </div>
+        <div class="example-2">
+            <div class="sub-title">
+                <h3 class="general-format">Stretch Value</h3>
+            </div>
+            <p class="text-format page-text">When using the stretch value of the align-items property, the items will be set up against the top left of the container along the cross axis.</p>
+            <div class="example-two-container example-containers">
+                <div class="example-two-item-one example-two-items">Item 1</div>
+                <div class="example-two-item-two example-two-items">Item 2</div>
+                <div class="example-two-item-three example-two-items">Item 3</div>
+    
+            </div>
+        </div>
+        <div class="item-sep">
+            <img
+            src="../assets/images/theme/two-color-trim.png"
+            alt=""
+            class="item-sep-img"
+          /> 
+        </div>
+        <div class="example-3">
+            <div class="sub-title">
+                <h3 class="general-format">Center Value</h3>
+            </div>
+            <p class="text-format page-text">When using the stretch value of the align-items property within the flexbox container, the items start at the top left of the cross axis and and fills the container along the cross axis..</p>
+            <div class="example-three-container example-containers">
+                <div class="example-three-item-one example-three-items">Item 1</div>
+                <div class="example-three-item-two example-three-items">Item 2</div>
+                <div class="example-three-item-three example-three-items">Item 3</div>
+    
+            </div>
+            <p class="text-format page-text highlight">
+                <span class="emphasis">NOTE: </span>Combining the align-items value &quot;center&quot; with justify-content's value of &quot;center&quot; makes a good centering affect for flex items in the container.
+            </p>
+        </div>
+        <div class="item-sep">
+            <img
+            src="../assets/images/theme/two-color-trim.png"
+            alt=""
+            class="item-sep-img"
+          /> 
+        </div>
+        <div class="example-4">
+            <div class="sub-title">
+                <h3 class="general-format">Flex-start Value</h3>
+            </div>
+            <p class="text-format page-text">This is the default behavior of the align-items property when used within the flexbox container. The items start at the top left and move from left to right to form a &quot;row&quot;.</p>
+            <div class="example-four-container example-containers">
+                <div class="example-four-item-one example-four-items">Item 1</div>
+                <div class="example-four-item-two example-four-items">Item 2</div>
+                <div class="example-four-item-three example-four-items">Item 3</div>
+    
+            </div>
+        </div>
+        <div class="item-sep">
+            <img
+            src="../assets/images/theme/two-color-trim.png"
+            alt=""
+            class="item-sep-img"
+          /> 
+        </div>
+        <div class="example-5">
+            <div class="sub-title">
+                <h3 class="general-format">Flex-end Value</h3>
+            </div>
+            <p class="text-format page-text">This is the default behavior of the align-items property when used within the flexbox container. The items start at the top left and move from left to right to form a &quot;row&quot;.</p>
+            <div class="example-five-container example-containers">
+                <div class="example-five-item-one example-five-items">Item 1</div>
+                <div class="example-five-item-two example-five-items">Item 2</div>
+                <div class="example-five-item-three example-five-items">Item 3</div>
+    
+            </div>
+        </div>
+        <div class="item-sep">
+            <img
+            src="../assets/images/theme/two-color-trim.png"
+            alt=""
+            class="item-sep-img"
+          /> 
+        </div>
+    </section>
+    <footer>
+      <p class="text-format page-text">created by Michael Martens</p>
+      <p class="text-format footer-format">&copy;copyright 2023</p>
+    </footer>
+  </body>
+</html>
