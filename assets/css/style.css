@@ -129,25 +129,19 @@ footer > p:last-child {
 }
 
 /* Container Examples */
-.example-containers {
+.example-container {
   display: flex;
   gap: 15px;
   background-color: black;
   margin: 25px 0;
 }
-/* .example-one-container {
-  display: flex;
-  gap: 15px;
-  background-color: black;
-  margin: 25px 0;
-}
-
-.example-one-items {
+.example-item {
   background-color: var(--primary);
   color: white;
   width: 100px;
   height: 55px;
-} */
+}
+
 .code-img-section {
   text-align: center;
   width: 100%;
