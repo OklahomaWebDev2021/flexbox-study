@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Align-Content</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Tektur:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/align-content.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        class="header-img"
+        src="../assets/images/glowing-blue-lines-dark-background.jpg"
+        alt=""
+      />
+      <h1 class="header-title primary-color">A Flexbox Study</h1>
+      <ul class="navbar">
+        <li class="navitems">
+          <a class="navitem primary-color" href="../index.html">Home</a>
+        </li>
+        <li class="navitems">
+          <a class="navitem primary-color" href="./container-properties.html"
+            >Container Properties</a
+          >
+        </li>
+        <li class="navitems">
+          <a class="navitem primary-color" href="">Item Properties</a>
+        </li>
+        <li class="navitems">
+          <a class="navitem primary-color" href="">Contact Us</a>
+        </li>
+        <li class="navitems">
+          <a class="navitem primary-color" href="">About Us</a>
+        </li>
+      </ul>
+      <a
+        class="image-disclaimer primary-color"
+        href="https://www.freepik.com/free-photo/glowing-blue-lines-dark-background_5083073.htm#query=technology&position=49&from_view=keyword&track=sph"
+        >Image by starline on Freepik</a
+      >
+    </header>
+    <section class="main">
+      <div class="main-title">
+        <h2 class="general-forrmat">Align-Items Property</h2>
+      </div>
+      <p class="text-format page-text">
+        The align-content property is used to align flex items inside of the
+        container along the cross axis (see align-items for a diagram of main
+        and cross axis <a href="./align-items.html">here</a>). This property
+        works on the spaces between the multiple lines of a flex-wrapped set of
+        flex items.
+      </p>
+      <p class="text-format page-text highlight">
+        <span class="emphasis">NOTE: </span>This will only work if the flex-wrap
+        property is set to a value of &quot;wrap&quot; and there are multiple
+        lines. The default value for flex-wrap is set to &quot;nowrap&quot;.
+      </p>
+      <p id="top" class="text-format page-text">
+        They are as follows:
+        <ul class="text-format page-text">
+            <li><a href="#align-items-flex-start-tag">Stretch</a></li>
+            <li><a href="#align-items-flex-start-tag">Flex-start</a></li>
+            <li><a href="#align-items-flex-end-tag">Flex-end</a></li>
+            <li><a href="#align-items-center-tag">Center</a></li>
+            <li><a href="#align-items-space-around-tag">Space-Around</a></li>
+            <li><a href="#align-items-space-between-tag">Space-Between</a></li>
+            <li><a href="#align-items-space-evenly-tag">Space-Evenly</a></li>
+        </ul>
+      </p>
+      <div class="example-1">
+        <div id="align-items-normal-tag" class="sub-title">
+            <h3>Stretch Property</h3>
+        </div>
+        <p class="text-format page-text">This value is the default value for the align-content property.  It will move flex items to the start of the flex container. In flex direction of row or row=reverse, this is the upper left. It also looks like the flex items stretch to fill the cross-axis of the container.</p>
+        <div class="example-one-container example-containers">
+            <div class="example-one-item-one example-one-items">Item 1</div>
+            <div class="example-one-item-two example-one-items">Item 2</div>
+            <div class="example-one-item-three example-one-items">Item 3</div>
+        </div>
+        <a class="back-to-top" href="#top">Top</a>
+      </div>
+      <div class="item-sep">
+        <img
+          src="../assets/images/theme/two-color-trim.png"
+          alt=""
+          class="item-sep-img"
+        />
+      </div>
+      <div class="example-2">
+        <div id="align-items-flex-start-tag" class="sub-title">
+            <h3>Flex-start Property</h3>
+        </div>
+        <p class="text-format page-text">This value will similarly move the flex items to the top and left of the cross axis, but unlike the normal value, the items follow the defined CSS properties.</p>
+        <div class="example-two-container example-containers">
+            <div class="example-two-item-one example-two-items">Item 1</div>
+            <div class="example-two-item-two example-two-items">Item 2</div>
+            <div class="example-two-item-three example-two-items">Item 3</div>
+        </div>
+        <a class="back-to-top" href="#top">Top</a>
+      </div>
+      <div class="item-sep">
+        <img
+          src="../assets/images/theme/two-color-trim.png"
+          alt=""
+          class="item-sep-img"
+        />
+      </div>
+      <div class="example-3">
+        <div id="align-items-flex-end-tag" class="sub-title">
+            <h3>Flex-end Property</h3>
+        </div>
+        <p class="text-format page-text">This value will move the flex items to the bottom and left of the cross axis.</p>
+        <div class="example-three-container example-containers">
+            <div class="example-three-item-one example-three-items">Item 1</div>
+            <div class="example-three-item-two example-three-items">Item 2</div>
+            <div class="example-three-item-three example-three-items">Item 3</div>
+        </div>
+        <a class="back-to-top" href="#top">Top</a>
+      </div>
+      <div class="item-sep">
+        <img
+          src="../assets/images/theme/two-color-trim.png"
+          alt=""
+          class="item-sep-img"
+        />
+      </div>
+      <div class="example-4">
+        <div id="align-items-center-tag"class="sub-title">
+            <h3>Center Property</h3>
+        </div>
+        <p class="text-format page-text">This value will move the flex items to the center and left of the cross axis.</p>
+        <div class="example-four-container example-containers">
+            <div class="example-four-item-one example-four-items">Item 1</div>
+            <div class="example-four-item-two example-four-items">Item 2</div>
+            <div class="example-four-item-three example-four-items">Item 3</div>
+        </div>
+        <a class="back-to-top" href="#top">Top</a>
+      </div>
+      <div class="item-sep">
+        <img
+          src="../assets/images/theme/two-color-trim.png"
+          alt=""
+          class="item-sep-img"
+        />
+      </div>
+      <div class="example-5">
+        <div id="align-items-space-around-tag" class="sub-title">
+            <h3>Space-around Property</h3>
+        </div>
+        <p class="text-format page-text">This value will space out the flex items add space to either side of the items and to the left of the cross axis.</p>
+        <div class="example-five-container example-containers">
+            <div class="example-five-item-one example-five-items">Item 1</div>
+            <div class="example-five-item-two example-five-items">Item 2</div>
+            <div class="example-five-item-three example-five-items">Item 3</div>
+        </div>
+        <a class="back-to-top" href="#top">Top</a>
+      </div>
+      <div class="item-sep">
+        <img
+          src="../assets/images/theme/two-color-trim.png"
+          alt=""
+          class="item-sep-img"
+        />
+      </div>
+      <div class="example-6">
+        <div id="align-items-space-between-tag" class="sub-title">
+            <h3>Space-between Property</h3>
+        </div>
+        <p class="text-format page-text">This value will space out the flex items add space between the items, but not on the first or last items next to the margins. The items are also left justified along the cross axis.</p>
+        <div class="example-six-container example-containers">
+            <div class="example-six-item-one example-six-items">Item 1</div>
+            <div class="example-six-item-two example-six-items">Item 2</div>
+            <div class="example-six-item-three example-six-items">Item 3</div>
+        </div>
+        <a class="back-to-top" href="#top">Top</a>
+      </div>
+      <div class="item-sep">
+        <img
+          src="../assets/images/theme/two-color-trim.png"
+          alt=""
+          class="item-sep-img"
+        />
+      </div>
+      <div class="example-7">
+        <div id="align-items-space-evenly-tag" class="sub-title">
+            <h3>Space-evenly Property</h3>
+        </div>
+        <p class="text-format page-text">This value will space out the flex items adding space between the items as evenly as possible. The items are also left justified along the cross axis.</p>
+        <div class="example-seven-container example-containers">
+            <div class="example-seven-item-one example-seven-items">Item 1</div>
+            <div class="example-seven-item-two example-seven-items">Item 2</div>
+            <div class="example-seven-item-three example-seven-items">Item 3</div>
+        </div>
+        <a class="back-to-top" href="#top">Top</a>
+      </div>
+      <div class="item-sep">
+        <img
+          src="../assets/images/theme/two-color-trim.png"
+          alt=""
+          class="item-sep-img"
+        />
+      </div>
+    </section>
+    <footer>
+      <p class="text-format page-text">created by Michael Martens</p>
+      <p class="text-format footer-format">&copy;copyright 2023</p>
+    </footer>
+  </body>
+</html>

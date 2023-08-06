@@ -1,0 +1,118 @@
+.example-one-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  background-color: black;
+  height: 150px;
+  align-content: stretch;
+  /* align-items: flex-start; */
+}
+
+.example-one-items {
+  background-color: var(--primary);
+  color: white;
+  width: 250px;
+  padding: 5px;
+}
+
+.example-two-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  background-color: black;
+  height: 150px;
+  align-content: flex-start;
+  /* align-items: flex-start; */
+}
+
+.example-two-items {
+  background-color: var(--primary);
+  color: white;
+  width: 250px;
+  padding: 5px;
+}
+
+.example-three-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  background-color: black;
+  height: 150px;
+  align-content: flex-end;
+  /* align-items: flex-start; */
+}
+
+.example-three-items {
+  background-color: var(--primary);
+  color: white;
+  width: 250px;
+  padding: 5px;
+}
+
+.example-four-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  background-color: black;
+  height: 150px;
+  align-content: center;
+  /* align-items: flex-start; */
+}
+
+.example-four-items {
+  background-color: var(--primary);
+  color: white;
+  width: 250px;
+  padding: 5px;
+}
+
+.example-five-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  background-color: black;
+  height: 200px;
+  align-content: space-around;
+  /* align-items: flex-start; */
+}
+
+.example-five-items {
+  background-color: var(--primary);
+  color: white;
+  width: 250px;
+  padding: 5px;
+}
+
+.example-six-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  background-color: black;
+  height: 200px;
+  align-content: space-between;
+  /* align-items: flex-start; */
+}
+
+.example-six-items {
+  background-color: var(--primary);
+  color: white;
+  width: 250px;
+  padding: 5px;
+}
+
+.example-seven-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  background-color: black;
+  height: 250px;
+  align-content: space-evenly;
+  /* align-items: flex-start; */
+}
+
+.example-seven-items {
+  background-color: var(--primary);
+  color: white;
+  width: 250px;
+  padding: 5px;
+}
