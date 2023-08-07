@@ -127,6 +127,17 @@ footer > p:last-child {
   padding: 15px;
   color: black;
 }
+.tip-with-list {
+  background-color: var(--highlight);
+  padding: 15px;
+  color: black;
+  margin-bottom: 0;
+}
+/* may want to fine tune this if there are more in the website */
+ul > li {
+  /* background-color: rgba(255, 255, 255, 0); */
+  margin-left: 15px;
+}
 
 /* Container Examples */
 .example-container {
@@ -135,6 +146,7 @@ footer > p:last-child {
   background-color: black;
   margin: 25px 0;
 }
+
 .example-item {
   background-color: var(--primary);
   color: white;

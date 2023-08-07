@@ -74,16 +74,10 @@
             </div>
             <p class="text-format page-text">The container does exactly what its name implies, it contains some kind of HTML element or elements.</p>
             <p class="text-format page-text">To use this to create a responsive layout on the website, we use the <span class="emphasis">display</span> property of CSS. This property is also used for other layout types that can be found <a href="https://www.w3schools.com/cssref/pr_class_display.php">here</a></p>
-            <p class="text-format page-text highlight">When setting up a brand new flexbox container, there are some default values of the properties discussed in the container and item property webpages.  They are as follows:
-              <ul>
-                <li>Items display in a row (the flex-direction property's default is row).</li>
-                <li>The items start from the start edge of the main axis.</li>
-                <li>The items do not stretch on the main dimension, but can shrink.</li>
-                <li>The items will stretch to fill the size of the cross axis.</li>
-                <li>The flex-basis property is set to auto.</li>
-                <li>The flex-wrap property is set to nowrap.</li>
-              </ul>
-            </p>
+            <div class="code-img-section">
+              <img src="./assets/images/flex-container-code-snippet.png" alt="CSS code for a flex container element" class="code-img">
+            </div>
+            
             <p class="text-format page-text">To see these <span class="emphasis">container</span> properties, please click <a href="./pages/container-properties.html">here</a>.</p>
         </div>
         <div class="item-sep">
@@ -99,6 +93,9 @@
             </div>
             <p class="text-format page-text">The items are components that are one level inside the container or direct children of the container element.</p>
             <p class="text-format page-text">These are the elements that will be formatted and become the layout of the container object.</p>
+            <div class="code-img-section">
+              <img src="./assets/images/flex-items-code-snippet.png" alt="CSS code for flex items in a flex container" class="code-img">
+            </div>
             <p class="text-format page-text">To see these <span class="emphasis">flex item</span> properties, please click <a href="">here</a>.</p>
         </div>
         <div class="item-sep">
@@ -112,18 +109,25 @@
             <div class="sub-sub-title">
                 <h4 id="test" class="title-format">Making it Work</h4>
             </div>
-            <p class="text-format page-text">The items are components that are one level inside the container or direct children of the container element.</p>
-            <p class="text-format page-text">These are the elements that will be formatted and become the layout of the container object.</p>
-            <p class="text-format page-text">Below, we have code and a live example of the items in action.</p>
-            <div class="example-one-container">
-                <div class="example-one-item-one example-one-items">Item 1</div>
-                <div class="example-one-item-two example-one-items">Item 2</div>
-                <div class="example-one-item-three example-one-items">Item 3</div>
+            <p class="text-format page-text">The flex items are components that are one level inside the flex container or direct children of the flex container element.</p>
+            <p class="text-format page-text">These are the elements that will be formatted and form the layout of the flex container object.</p>
+            <p class="text-format page-text">Below, we have a flex container with three flex items in their most basic setup.</p>
+            <div class="example-container">
+                <div class="example-item">Item 1</div>
+                <div class="example-item">Item 2</div>
+                <div class="example-item">Item 3</div>
             </div>
-            <p class="text-format page-text">Below is an example of the code necessary to create a flexbox layout in the website. The three key takeaways from this are the container name, the display property, and the gap property.</p>
-            <div class="code-img-section">
-                <img class="code-img" src="./assets/images/flex-container-code-snippet.png" alt="" width="300" height="150">
-            </div>
+            <p class="text-format page-text">The above flex container was built from the two code snippet in the Container and Items sections above. This code can also be viewed by opening the style.css file in this project and searching for the .example-container and .example-item CSS rules.</p>
+            <p class="text-format page-text tip-with-list"><span class="emphasis">TIP:</span> When setting up a brand new flexbox container, there are some default values of the properties discussed in the container and item property webpages.  They are as follows:
+              <ul class="text-format page-text highlight">
+                <li>Items display in a row (the flex-direction property's default is row).</li>
+                <li>The items start from the start edge of the main axis.</li>
+                <li>The items do not stretch on the main dimension, but can shrink.</li>
+                <li>The items will stretch to fill the size of the cross axis.</li>
+                <li>The flex-basis property is set to auto.</li>
+                <li>The flex-wrap property is set to nowrap.</li>
+              </ul>
+            </p>
         </div>
         </div>
     </section>
