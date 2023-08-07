@@ -1,27 +1,16 @@
 .example-one-container {
   flex-wrap: nowrap;
 }
-.example-one-item {
-  /* flex: 1 1; */
-  /* background-color: var(--primary); */
-  padding: 5px;
-  width: 250px;
-  min-width: 150px;
-}
 
 .example-two-container {
   flex-wrap: wrap;
-}
-.example-two-item {
-  padding: 5px;
-  width: 250px;
-  min-width: 150px;
 }
 
 .example-three-container {
   flex-wrap: wrap-reverse;
 }
-.example-three-item {
+
+.flex-wrap-example-item {
   padding: 5px;
   width: 250px;
   min-width: 150px;
