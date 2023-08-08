@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Container Properties</title>
+    <title>Item Properties</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,7 +29,9 @@
           <a class="navitem primary-color" href="#">Container Properties</a>
         </li>
         <li class="navitems">
-          <a class="navitem primary-color" href="../pages/item-properties.html">Item Properties</a>
+          <a class="navitem primary-color" href="../pages/item-properties.html"
+            >Item Properties</a
+          >
         </li>
         <li class="navitems">
           <a class="navitem primary-color" href="">Contact Us</a>
@@ -47,68 +49,73 @@
     <section class="main">
       <div class="opening">
         <div class="main-title">
-          <h2>What are Container Properties?</h2>
+          <h2>What are Item Properties?</h2>
         </div>
         <p class="text-format page-text">
-          Container properties are properties that work on the fiexbox items
-          from inside of the flexbox container. If these properties are placed inside of the flex items, they will not work. Some properties only work when other properties are also used simultaneously. Let's look at each property.
+          <span class="emphasis">Item properties</span> are properties that work
+          on the flexbox item from inside of the flex item, itself. If these
+          properties are placed inside of the flex container element, they will
+          not work. Some properties only work when other properties are also
+          used simultaneously. Let's look at each property.
         </p>
       </div>
       <div class="sub-title">
-        <h3 class="general-format">Container Properties</h3>
+        <h3 class="general-format">Item Properties</h3>
       </div>
       <div class="properties">
         <div class="property">
-          <h4 class="property-title">Flex Direction</h4>
+          <h4 class="property-title">Order</h4>
           <p class="text-format page-text">
-            Learn more about how flex-direction can change the direction of the
-            flex items.
+            Learn more about how order can change the position of a flex item in
+            a list of flex items.
           </p>
-          <a class="property-btn" href="./flex-direction.html">More Info</a>
+          <a class="property-btn" href="./order.html">More Info</a>
         </div>
         <div class="property">
-          <h4 class="property-title">Flex-Wrap</h4>
+          <h4 class="property-title">Flex-Grow</h4>
           <p class="text-format page-text">
-            Learn more about how Flex-Wrap can control what happens when too
-            many items try to occupy the same row.
+            Learn more about how flex-grow can control whether an item can grow
+            or stay the same size.
           </p>
-          <a class="property-btn" href="./flex-wrap.html">More Info</a>
+          <a class="property-btn" href="./flex-grow.html">More Info</a>
         </div>
         <div class="property">
-          <h4 class="property-title">Justify-Content</h4>
+          <h4 class="property-title">Flex-Shrink</h4>
           <p class="text-format page-text">
-            Learn more about how this property can change the position of flex
-            items on the main axis.
+            Learn more about how flex-shrink can control whether an item can
+            shrink or stay the same size.
           </p>
-          <a class="property-btn" href="./justify-content.html">More Info</a>
+          <a class="property-btn" href="./flex-shrink.html">More Info</a>
         </div>
         <div class="property">
-          <h4 class="property-title">Align-Items</h4>
+          <h4 class="property-title">Flex-Basis</h4>
           <p class="text-format page-text">
-            Learn more about how this property can change the position of the
-            flex items on the cross axis.
+            Learn more about how flex-basis can determine the initial size of
+            the item.
           </p>
-          <a class="property-btn" href="./align-items.html">More Info</a>
+          <a class="property-btn" href="./flex-basis.html">More Info</a>
         </div>
         <div class="property">
-          <h4 class="property-title">Align-Content</h4>
+          <h4 class="property-title">Flex</h4>
           <p class="text-format page-text">
-            Learn more about how this property can change the layout of wrapped
-            flex items.
+            Learn more about how flex can combine the flex-grow, flex-shrink,
+            and flex-basis in a single property.
           </p>
-          <a class="property-btn" href="../pages/align-content.html">More Info</a>
+          <a class="property-btn" href="../pages/flex.html">More Info</a>
+        </div>
+        <div class="property">
+          <h4 class="property-title">Align-Self</h4>
+          <p class="text-format page-text">
+            Learn more about how align-self can override other properties to
+            position an individual item.
+          </p>
+          <a class="property-btn" href="../pages/align-self.html">More Info</a>
         </div>
       </div>
     </section>
-    <div class="item-sep">
-      <img
-      src="../assets/images/theme/two-color-trim.png"
-    alt=""
-    class="item-sep-img"
-  />    
-  <footer>
-      <p class="text-format page-text">created by Michael Martens</p>
+    <footer>
+      <p class="text-format page-text">created by M. Martens</p>
       <p class="text-format footer-format">&copy;copyright 2023</p>
-  </footer>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,30 @@
+.example-item {
+  width: 300px;
+}
+.example-two-item-one {
+  flex-grow: 1;
+}
+
+.example-three-item-one {
+  flex-grow: 1;
+}
+
+.example-three-item-two {
+  flex-grow: 1;
+}
+
+.example-three-item-three {
+  flex-grow: 1;
+}
+
+.example-four-item-one {
+  flex-grow: 1;
+}
+
+.example-four-item-two {
+  flex-grow: 2;
+}
+
+.example-four-item-three {
+  flex-grow: 3;
+}

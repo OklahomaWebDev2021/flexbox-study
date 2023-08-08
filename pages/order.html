@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Property</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Tektur:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/order.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        class="header-img"
+        src="../assets/images/glowing-blue-lines-dark-background.jpg"
+        alt=""
+      />
+      <h1 class="header-title primary-color">A Flexbox Study</h1>
+      <ul class="navbar">
+        <li class="navitems">
+          <a class="navitem primary-color" href="../index.html">Home</a>
+        </li>
+        <li class="navitems">
+          <a class="navitem primary-color" href="./container-properties.html"
+            >Container Properties</a
+          >
+        </li>
+        <li class="navitems">
+          <a class="navitem primary-color" href="./item-properties.html"
+            >Item Properties</a
+          >
+        </li>
+        <li class="navitems">
+          <a class="navitem primary-color" href="">Contact Us</a>
+        </li>
+        <li class="navitems">
+          <a class="navitem primary-color" href="">About Us</a>
+        </li>
+      </ul>
+      <a
+        class="image-disclaimer primary-color"
+        href="https://www.freepik.com/free-photo/glowing-blue-lines-dark-background_5083073.htm#query=technology&position=49&from_view=keyword&track=sph"
+        >Image by starline on Freepik</a
+      >
+    </header>
+    <section class="main">
+      <div class="main-title">
+        <h2>Order Property</h2>
+      </div>
+      <p class="text-format page-text">
+        The order property is a flex item level property. It can take a numeric
+        value from a negative to a positve including zero. This will position
+        the individual flex item within the container accordingly. A negative
+        number moves the item to the left and a positive number moves it to the
+        right.
+      </p>
+      <p id="back-to-top-tag" class="text-format page-text">
+        The available properties are as follows:
+        <ul class="text-format page-text">
+          <li><a href="#order-zero-tag">Zero Value</a></li>
+          <li><a href="#order-positive-tag">Positive</a></li>
+          <li><a href="#order-negative-tag">Negative</a></li>
+        </ul>
+      </p>
+      <div class="example-one">
+        <div id="order-zero-tag" class="sub-title">
+          <h3 class="general-format">Zero Value</h3>
+        </div>
+        <p class="text-format page-text">
+          This is the natural order of the flex items. It is the order in which
+          they are entered into the HTML file. So, the first way to control the
+          order of the items is to simply place them into the HTML in the order
+          in which they should appear to those that view your page. No code is
+          needed for this order.
+        </p>
+        <div class="example-container">
+          <div class="example-item">Item 1</div>
+          <div class="example-item">Item 2</div>
+          <div class="example-item">Item 3</div>
+        </div>
+        <a class="back-to-top" href="#back-to-top-tag">Top</a>
+        <p class="text-format page-text">
+          Below is a code snippet to show how to add the flex-start value inside
+          the flex container. Please note that the other code necessary to
+          create a flex container is shown on the homepage under &quot;<a
+            href="../index.html#flexitem"
+            >The Items</a
+          >&quot; section.
+        </p>
+        <div class="code-img-section">
+          <img
+            src="../assets/images/justify-content-flex-start-code-snippet.png"
+            alt="justify content flex start value image"
+            class="code-img"
+          />
+        </div>
+      </div>
+      <div class="item-sep">
+        <img
+          src="../assets/images/theme/two-color-trim.png"
+          alt=""
+          class="item-sep-img"
+        />
+      </div>
+      <div class="example-two">
+        <div id="order-positive-tag" class="sub-title">
+          <h3 class="general-format">Positive Value</h3>
+        </div>
+        <p class="text-format page-text">
+          By using a positive number, the item where the order property is used will move to the right. How far to the right depends on if there are other positive values used for other items or if their values are all zero. 
+        </p>
+        <p class="text-format page-text">
+            In the example below, item 2 and item 3 both have an order value of 0 and item 1 has an order value of 1.  This will put item 1 at the end of the items because a value of 1 is the largest positive value.
+        </p>
+        <div class="example-container">
+          <div class="example-item example-two-item-one">Item 1<br/>order: 1</div>
+          <div class="example-item">Item 2<br/>order: 0</div>
+          <div class="example-item">Item 3<br/>order: 0</div>
+        </div>
+        <p class="text-format page-text">
+            Below is a code snippet to show how to add a positive value inside
+            the flex item to change its individual order. Please note that the other code necessary to
+            create a flex item is shown on the homepage under &quot;<a
+              href="../index.html#flexitem"
+              >The Items</a
+            >&quot; section.
+          </p>
+          <div class="code-img-section">
+            <img
+              src="../assets/images/order-positive-one-code-snippet.png"
+              alt="justify content flex start value image"
+              class="code-img"
+            />
+          </div>
+        <p class="text-format page-text">
+            In this example, item 2 has an order value of 0 and item 1 has an order value of 1 and item 3 an order value of 2.  This will put item 1 in the middle of item 2 and item 3.
+        </p>
+        <div class="example-container">
+          <div class="example-item example-two-item-one">Item 1<br/>order: 1</div>
+          <div class="example-item">Item 2<br/>order: 0</div>
+          <div class="example-item example-two-item-three">Item 3<br/>order: 2</div>
+        </div>
+        <a class="back-to-top" href="#back-to-top-tag">Top</a>
+        <p class="text-format page-text">
+            Below is a code snippet to show how to add a second positive value inside
+            another flex item to change their order. Combine this code with the code used in the above example to change the order of two flex items. Please note that the other code necessary to
+            create a flex item is shown on the homepage under &quot;<a
+              href="../index.html#flexitem"
+              >The Items</a
+            >&quot; section.
+          </p>
+        <div class="code-img-section">
+          <img
+            src="../assets/images/order-positive-two-code-snippet.png"
+            alt="justify content flex start value image"
+            class="code-img"
+          />
+        </div>
+      </div>
+      <div class="item-sep">
+        <img
+          src="../assets/images/theme/two-color-trim.png"
+          alt=""
+          class="item-sep-img"
+        />
+      </div>
+      <div class="example-two">
+        <div id="order-negative-tag" class="sub-title">
+          <h3 class="general-format">Negative Value</h3>
+        </div>
+        <p class="text-format page-text">
+          By using a negative number, the item where the order property is used will move to the left. How far to the left depends on if there are other negative values used for other items or if their values are all zero. 
+        </p>
+        <p class="text-format page-text">
+            In the example below, item 1 and item 2 both have an order value of 0 and item 3 has an order value of -1.  This will put item 3 at the start of the items because a value of -1 is the smaller than either a positive or zero value.
+        </p>
+        <div class="example-container">
+          <div class="example-item">Item 1<br/>order: 0</div>
+          <div class="example-item">Item 2<br/>order: 0</div>
+          <div class="example-item example-three-item-three">Item 3<br/>order: -1</div>
+        </div>
+        <p class="text-format page-text">
+            Below is a code snippet to show how to add a negative value inside
+            the flex item to change its individual order. Please note that the other code necessary to
+            create a flex item is shown on the homepage under &quot;<a
+              href="../index.html#flexitem"
+              >The Items</a
+            >&quot; section.
+          </p>
+          <div class="code-img-section">
+            <img
+              src="../assets/images/order-negative-one-code-snippet.png"
+              alt="order positive value image"
+              class="code-img"
+            />
+          </div>
+        <p class="text-format page-text">
+            In this example, item 2 has an order value of 0 and item 1 has an order value of -2 and item 3 an order value of -1.  This will put item 3 in the middle of item 1 and item 2.
+        </p>
+        <div class="example-container">
+          <div class="example-item example-three-item-one">Item 1<br/>order: -2</div>
+          <div class="example-item">Item 2<br/>order: 0</div>
+          <div class="example-item example-three-item-three">Item 3<br/>order: -1</div>
+        </div>
+        <a class="back-to-top" href="#back-to-top-tag">Top</a>
+        <p class="text-format page-text">
+          Below is a code snippet to show how to add a second negative value inside
+          another flex item to change their order. Combine this code with the code used in the above example to change the order of two flex items. Please note that the other code necessary to
+          create a flex item is shown on the homepage under &quot;<a
+            href="../index.html#flexitem"
+            >The Items</a
+          >&quot; section.
+        </p>
+        <div class="code-img-section">
+          <img
+            src="../assets/images/order-negative-two-code-snippet.png"
+            alt="justify content flex start value image"
+            class="code-img"
+          />
+        </div>
+      </div>
+      <div class="item-sep">
+        <img
+          src="../assets/images/theme/two-color-trim.png"
+          alt=""
+          class="item-sep-img"
+        />
+      </div>
+    </section>
+    <footer>
+      <p class="text-format page-text">created by M. Martens</p>
+      <p class="text-format footer-format">&copy;copyright 2023</p>
+    </footer>
+  </body>
+</html>

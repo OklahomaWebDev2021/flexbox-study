@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex-Grow Property</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Tektur:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/flex-grow.css" />
+  </head>
+  <body>
+    <body>
+        <header>
+            <img
+              class="header-img"
+              src="../assets/images/glowing-blue-lines-dark-background.jpg"
+              alt=""
+            />
+            <h1 class="header-title primary-color">A Flexbox Study</h1>
+            <ul class="navbar">
+              <li class="navitems">
+                <a class="navitem primary-color" href="../index.html">Home</a>
+              </li>
+              <li class="navitems">
+                <a class="navitem primary-color" href="./container-properties.html"
+                  >Container Properties</a
+                >
+              </li>
+              <li class="navitems">
+                <a class="navitem primary-color" href="./item-properties.html">Item Properties</a>
+              </li>
+              <li class="navitems">
+                <a class="navitem primary-color" href="">Contact Us</a>
+              </li>
+              <li class="navitems">
+                <a class="navitem primary-color" href="">About Us</a>
+              </li>
+            </ul>
+            <a
+              class="image-disclaimer"
+              href="https://www.freepik.com/free-photo/glowing-blue-lines-dark-background_5083073.htm#query=technology&position=49&from_view=keyword&track=sph"
+              >Image by starline on Freepik</a
+            >
+          </header>
+        <section class="main">
+            <div class="main-title">
+                <h2>Flex-Grow Property</h2>
+              </div>
+            <p class="text-format page-text">
+                This property determines how much space a flex item should consume in a flex container. This property can accept positive numeric values and zero. When used, this property will expand the flex item and will increase the size of the item by the factor indicated by the numeric value. This property can be used with two other properties in a shorthand property called &quot;flex&quot; that we will discuss on another page. 
+            </p>
+            <p id="back-to-top-tag" class="text-format page-text">Below, are the four scenarios that we will look at on this page.  They are as follows:
+                <ul class="text-format">
+                    <li><a href="#flex-grow-default-tag">Flex-Grow Default</a></li>
+                    <li><a href="#flex-grow-single-tag">Flex-Grow One Item</a></li>
+                    <li><a href="#flex-grow-all-same-tag">Flex-Grow All Items Same</a></li>
+                    <li><a href="#flex-grow-all-different-tag">Flex-Grow All Items Different</a></li>
+                </ul>
+            </p>
+            <div class="example-one">
+                <div id="flex-grow-default-tag" class="sub-title">
+                    <h3 class="general-format">Flex-Grow Default</h3>
+                </div>
+                <p class="text-format page-text">This property sets the factor of growth of the specified item in relation to the other items in the container. By default this value is set to 0. When the size of the container grows, the default behavior of the items is to not grow with the container. The flex items will remain the same after they pass above the initial size of each item.</p>
+                <p class="text-format page-text">In the example below, we will show the default of the flex-grow property which is set to zero. This is automatic and we do not have to set this value.</p>
+                <div class="example-one-container example-container">
+                    <div class="example-item example-one-item">Item 1</div>
+                    <div class="example-item example-one-item">Item 2</div>
+                    <div class="example-item example-one-item">Item 3</div>
+                </div>
+                <a class="back-to-top" href="#back-to-top-tag">Top</a>
+                <p class="text-format page-text">For this property, no code needs to be set as this is the default behavior. Please note that the other code necessary to create a flex item is shown on the homepage under &quot;<a href="../index.html#flexitem">The Item</a>&quot; section.</p>
+                <!-- <div class="code-img-section">
+                <img src="../assets/images/justify-content-flex-start-code-snippet.png" alt="justify content flex start value image" class="code-img">
+                </div> -->
+            </div>
+            <div class="item-sep">
+              <img
+                src="../assets/images/theme/two-color-trim.png"
+                alt=""
+                class="item-sep-img"
+              /> 
+            </div>
+            <div class="example-two">
+                <div id="flex-grow-single-tag" class="sub-title">
+                    <h3 class="general-format">Flex-Grow Single Value</h3>
+                </div>
+                <p class="text-format page-text">If we want the first flex item to grow, we need to determine by how much. This will be a number value. This could be numeric, em, rem, or % value. In this example, setting the flex-grow to a value of 1 while the rest of the items have a flex-grow value of 0, will cause the first item to increase its size to fill the remaining space in the flex-container. As the page shrinks, the items will shrink proportionally until the first item reaches the preset size of 100px (defined in the style.css file) and then all items will shrink at the same rate or factor.</p>
+                <div class="example-two-container example-container">
+                    <div class="example-item example-two-item-one">Item 1</div>
+                    <div class="example-item example-two-item">Item 2</div>
+                    <div class="example-item example-two-item">Item 3</div>
+                </div>
+                <a class="back-to-top" href="#back-to-top-tag">Top</a>
+                <p class="text-format page-text">Below is a code snippet to show how to add the quantitive value inside the flex item. Please note that the other code necessary to create a flex item is shown on the homepage under &quot;<a href="../index.html#flexitem">The Item</a>&quot; section.</p>
+                <div class="code-img-section">
+                  <img src="../assets/images/flex-grow-item-one-set-code-snippet.png" alt="flex grow first item value set image" class="code-img">
+                </div>
+        
+              </div>
+              <div class="item-sep">
+                <img
+                src="../assets/images/theme/two-color-trim.png"
+                alt=""
+                class="item-sep-img"
+              />
+              </div> 
+            <div class="example-three">
+                <div id="flex-grow-all-same-tag" class="sub-title">
+                    <h3 class="general-format">Flex-Grow Equal Values</h3>
+                </div>
+                <p class="text-format page-text">If we want all of the flex items to grow equally, we need to determine by how much. This will be a number value. This could be numeric, em, rem, or % value. In this example, setting the flex-grow for each item to a value of 1 , will cause the all of the items to increase its size to fill the remaining space in the flex-container. As the page shrinks, the items will shrink proportionally until the each item reaches the preset size of 100px (defined in the style.css file) and then all items will shrink at the same rate or factor.</p>
+                <div class="example-three-container example-container">
+                    <div class="example-item example-three-item-one">Item 1</div>
+                    <div class="example-item example-three-item-two">Item 2</div>
+                    <div class="example-item example-three-item-three">Item 3</div>
+                </div>
+                <a class="back-to-top" href="#back-to-top-tag">Top</a>
+                <p class="text-format page-text">Below is a code snippet to show how to add the same quantitive value inside each flex item. Please note that the other code necessary to create a flex item is shown on the homepage under &quot;<a href="../index.html#flexitem">The Item</a>&quot; section.</p>
+                <div class="code-img-section">
+                  <img src="../assets/images/flex-grow-item-all-set-code-snippet.png" alt="flex grow all item values set equally image" class="code-img">
+                </div>
+        
+              </div>
+              <div class="item-sep">
+                <img
+                src="../assets/images/theme/two-color-trim.png"
+                alt=""
+                class="item-sep-img"
+              />
+              </div> 
+              <div class="example-four">
+                <div id="flex-grow-all-different-tag" class="sub-title">
+                    <h3 class="general-format">Flex-Grow Different Value</h3>
+                </div>
+                <p class="text-format page-text">If we want all of the flex items to grow differently, we need to determine by how much. This will be a number value. This could be numeric, em, rem, or % value. In this example, setting the flex-grow for each item to a different value (i.e. 1, 2, 3), will cause the all of the items to increase its size to fill the remaining space according to the value in each item in the flex-container. As the page shrinks, the items will shrink proportionally until the each item reaches the preset size of 100px (defined in the style.css file) and then all items will shrink at the same rate or factor.</p>
+                <div class="example-four-container example-container">
+                    <div class="example-item example-four-item-one">Item 1</div>
+                    <div class="example-item example-four-item-two">Item 2</div>
+                    <div class="example-item example-four-item-three">Item 3</div>
+                </div>
+                <a class="back-to-top" href="#back-to-top-tag">Top</a>
+                <p class="text-format page-text">Below is a code snippet to show how to add the different quantitive values inside each flex item. Please note that the other code necessary to create a flex item is shown on the homepage under &quot;<a href="../index.html#flexitem">The Item</a>&quot; section.</p>
+                <div class="code-img-section">
+                  <img src="../assets/images/flex-grow-item-all-set-differently-code-snippet.png" alt="flex grow all item values set equally image" class="code-img">
+                </div>
+        
+              </div>
+              <div class="item-sep">
+                <img
+                src="../assets/images/theme/two-color-trim.png"
+                alt=""
+                class="item-sep-img"
+              />
+              </div> 
+        </section>
+        <footer>
+            <p class="text-format page-text">created by M. Martens</p>
+            <p class="text-format footer-format">&copy;copyright 2023</p>
+        </footer>
+  </body>
+</html>
