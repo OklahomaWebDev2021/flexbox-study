@@ -1,0 +1,32 @@
+/* elements */
+ul > li:hover {
+  color: white;
+}
+
+/* IDs */
+
+/* classes */
+.main-container {
+  display: flex;
+  gap: 15px;
+  background-color: black;
+  padding: 25px;
+}
+
+.profile-text {
+  color: var(--primary);
+}
+
+.profile-img-cont {
+  padding-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  border-radius: 50%;
+  border-style: outset;
+  border-width: 5px;
+  border-color: var(--primary);
+}
