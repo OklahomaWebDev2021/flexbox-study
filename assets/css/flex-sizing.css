@@ -1,0 +1,84 @@
+.example-container {
+  height: 200px;
+}
+.test-item {
+  background-color: var(--primary);
+  color: white;
+  height: 55px;
+}
+
+.example-one-item-one {
+  width: auto;
+}
+
+.exmaple-one-item-two {
+  width: auto;
+}
+
+.example-one-item-three {
+  width: auto;
+}
+
+.example-two-item-one {
+  width: 200px;
+}
+
+.example-two-item-two {
+  width: 200px;
+}
+
+.example-two-item-three {
+  width: 200px;
+}
+
+.example-three-item-one {
+  width: 200px;
+  flex-basis: 150px;
+}
+
+.example-three-item-two {
+  width: 200px;
+  flex-basis: 150px;
+}
+
+.example-three-item-three {
+  width: 200px;
+  flex-basis: 150px;
+  max-width: 125;
+}
+
+.example-four-item-one {
+  width: 150px;
+  flex-basis: 150px;
+  min-width: 200px;
+}
+
+.example-four-item-two {
+  width: 150px;
+  flex-basis: 150px;
+  min-width: 200px;
+}
+
+.example-four-item-three {
+  width: 150px;
+  flex-basis: 150px;
+  min-width: 200px;
+}
+
+.example-five-item-one {
+  width: 200px;
+  flex-basis: 150px;
+  max-width: 125px;
+}
+
+.example-five-item-two {
+  width: 200px;
+  flex-basis: 150px;
+  max-width: 125px;
+}
+
+.example-five-item-three {
+  width: 200px;
+  flex-basis: 150px;
+  max-width: 125px;
+}

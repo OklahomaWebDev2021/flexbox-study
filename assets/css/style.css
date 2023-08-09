@@ -116,11 +116,25 @@ footer > p:last-child {
   margin-bottom: 25px;
   margin-top: 35px;
 }
+
 .sub-sub-title {
-  font-size: 1.5rem;
+  font-family: 'Tektur', cursive;
+  font-size: 1rem;
   margin-bottom: 15px;
   text-align: center;
 }
+
+.coding-title {
+  background-color: black;
+  color: var(--primary);
+  font-family: 'Tektur', cursive;
+  padding: 15px;
+  font-size: 1rem;
+  margin-top: 35px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
 .emphasis {
   font-weight: bold;
 }

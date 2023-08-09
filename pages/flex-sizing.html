@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex-Sizing Theory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Tektur:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/flex-sizing.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="../assets/images/glowing-blue-lines-dark-background.jpg"
+        alt="image of blue swirl on black background"
+        class="header-img"
+      />
+      <h1 class="header-title">A Flexbox Study</h1>
+      <ul class="navbar">
+        <li class="navitems">
+          <a href="../index.html" class="navitem">Home</a>
+        </li>
+        <li class="navitems">
+          <a href="../pages/container-properties.html" class="navitem"
+            >Container Properties</a
+          >
+        </li>
+        <li class="navitems">
+          <a href="../pages/item-properties.html" class="navitem"
+            >Item Properties</a
+          >
+        </li>
+        <li class="navitems">
+          <a href="../pages/contact-us.html" class="navitem">Contact Us</a>
+        </li>
+        <li class="navitems">
+          <a href="../pages/about-us.html" class="navitem">About Us</a>
+        </li>
+      </ul>
+      <a
+        href="https://www.freepik.com/free-photo/glowing-blue-lines-dark-background-5083073.htm#query=technology&position=49&from_view=keyword&track=sph"
+        class="image-disclaimer"
+        >Image by starline on Freepik</a
+      >
+    </header>
+    <section class="main">
+      <div class="main-topic">
+        <div id="back-to-top-tag" class="main-title">
+          <h1>Flexbox Sizing Principle</h1>
+        </div>
+        <p class="text-format page-text">
+          Flexbox main axis sizing has a number of layers of consideration when
+          determining the criteria for the width. In looking a the image below
+          we see how flexbox determines what width to use when sizing a flex
+          item.
+        </p>
+        <ul class="text-format">
+          <li>
+            If no widths are set on a flex item, flexbox will default to the
+            <span class="emphasis">content width</span>.
+          </li>
+          <li>
+            If the <span class="emphasis">width property</span> is used, then
+            flexbox will use this over the content width.
+          </li>
+          <li>
+            If the <span class="emphasis">flex-basis</span> is set, then content
+            width and width property will be ignored.
+          </li>
+          <li>If min-width is used and is</li>
+        </ul>
+        <div class="code-img-section">
+          <img
+            src="../assets/images/flex-algorith.png"
+            alt="width algorithm image"
+            class="code-img"
+          />
+        </div>
+        <div class="item-list">
+          <ul class="text-format page-text">
+            <li><a href="#content-width-tag">Content Width</a></li>
+            <li><a href="#width-property-tag">Width Property</a></li>
+            <li><a href="#flex-basis-tag">Flex-Basis</a></li>
+            <li><a href="#min-width-tag">Min-Width</a></li>
+            <li><a href="#max-width-tag">Max-Width</a></li>
+          </ul>
+        </div>
+        <p class="text-format page-text highlight">
+          <span class="emphasis">NOTE:</span> The settings for flex-grow and
+          flex-shrink can have an affect on the sizing of the flex items. The
+          default is flex-grow set to 0 and flex-shrink set to 1 with flex-basis
+          set to auto.
+        </p>
+      </div>
+      <div class="example-section">
+        <div id="content-width-tag" class="sub-title">
+          <h2>Content Width</h2>
+        </div>
+        <div class="example-text">
+          <p class="text-format page-text">
+            Content width looks literally at the content or text typed inside
+            the element. If no other width property is set, then the flex items
+            will base their widths on that content.
+          </p>
+          <div class="example-block">
+            <p class="text-format page-text">
+              In the example below, we see that the length of the length of the
+              flex item along the main axis is snug against the text. As long as
+              all of the text will fit on a single line on the remaining space
+              of the container, that will be the maximum size. As the device
+              gets smaller or the screen shrinks, the text will wrap down to the
+              longest word. This will be the minimum length of the flex item.
+              After that, the flex items will begin to move off the screen.
+            </p>
+            <p class="text-format page-text highlight">
+              <span class="emphasis">TIP:</span> If using a laptop, adjusting
+              the size of the browser should show the content width in action.
+              For a tablet or smart phone, try rotating the device to see the
+              length affect.
+            </p>
+            <div class="example-container">
+              <div class="test-item example-one-item-one">Item 1 - Width</div>
+              <div class="test-item example-one-item-two">
+                Item 2 - Width with more text
+              </div>
+              <div class="test-item example-one-item-three">
+                Item 3 - This will be the longest line of text.
+              </div>
+            </div>
+            <a href="#back-to-top-tag" id="back-to-top-tag" class="back-to-top"
+              >Top</a
+            >
+          </div>
+          <div class="code-block">
+            <p class="text-format page-text">
+              Below is the code that needed to make this work. However, for this
+              example this value is default so no code is needed to make it
+              work.
+            </p>
+            <div class="code-img-section">
+              <img src="" alt="" class="code-img" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item-sep">
+        <img
+          src="../assets/images/theme/two-color-trim.png"
+          alt=""
+          class="item-sep-img"
+        />
+      </div>
+      <div class="example-section">
+        <div id="width-property-tag" class="sub-title">
+          <h2>Width Property</h2>
+        </div>
+        <div class="example-text">
+          <p class="text-format page-text">
+            If the width property of the flex item has been set, flexbox will
+            use this to determine the length of the flex item along the main
+            axis.
+          </p>
+          <div class="example-block">
+            <p class="text-format page-text">
+              In the example below, we see that the width of the length of the
+              flex item along the main axis is pushed out to 200 pixels. As the
+              device gets smaller or the screen shrinks, the text will wrap down
+              to the longest word as in the example above. This will be the
+              minimum length of the flex item. After that, the flex items will
+              begin to move off the screen.
+            </p>
+            <p class="text-format page-text highlight">
+              <span class="emphasis">TIP:</span> If using a laptop, adjusting
+              the size of the browser should show the content width in action.
+              For a tablet or smart phone, try rotating the device to see the
+              length affect.
+            </p>
+            <div class="example-container">
+              <div class="test-item example-two-item-one">Item 1 - Width</div>
+              <div class="test-item example-two-item-two">
+                Item 2 - Width with more text
+              </div>
+              <div class="test-item example-two-item-three">
+                Item 3 - This will be the longest line of text.
+              </div>
+            </div>
+            <a href="#back-to-top-tag" id="back-to-top-tag" class="back-to-top"
+              >Top</a
+            >
+          </div>
+          <div class="code-block">
+            <p class="text-format page-text">
+              Below is the code that needed to make this work. In this example,
+              the width property of each flex item overrides the content width
+              of that item and the length of the flex item along the main axis
+              changes to that of the width property.
+            </p>
+            <div class="code-img-section">
+              <img
+                src="../assets/images/flex-sizing-width-property-code-snippet.png"
+                alt="example of code for setting width property"
+                class="code-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item-sep">
+        <img
+          src="../assets/images/theme/two-color-trim.png"
+          alt=""
+          class="item-sep-img"
+        />
+      </div>
+      <div class="example-section">
+        <div id="flex-basis-tag" class="sub-title">
+          <h2>Flex-Basis Property</h2>
+        </div>
+        <div class="example-text">
+          <p class="text-format page-text">
+            If the flex-basis property is used, this will override both the
+            content width and the width property of the flex item whether the
+            value is larger or smaller than either of the widths.
+          </p>
+          <div class="example-block">
+            <p class="text-format page-text">
+              In the example below, we see that the width of the length of the
+              flex item along the main axis is shrunk down from the 200 pixels
+              in the last example. As the device gets smaller or the screen
+              shrinks, the text will wrap down to the longest word as in the
+              example above. This will be the minimum length of the flex item.
+              After that, the flex items will begin to move off the screen.
+            </p>
+            <p class="text-format page-text highlight">
+              <span class="emphasis">TIP:</span> If using a laptop, adjusting
+              the size of the browser should show the content width in action.
+              For a tablet or smart phone, try rotating the device to see the
+              length affect.
+            </p>
+            <div class="example-container">
+              <div class="test-item example-three-item-one">Item 1 - Width</div>
+              <div class="test-item example-three-item-two">
+                Item 2 - Width with more text
+              </div>
+              <div class="test-item example-three-item-three">
+                Item 3 - This will be the longest line of text.
+              </div>
+            </div>
+            <a href="#back-to-top-tag" id="back-to-top-tag" class="back-to-top"
+              >Top</a
+            >
+          </div>
+          <div class="code-block">
+            <p class="text-format page-text">
+              Below is the code that needed to make this work. Here we see that
+              the flex-basis property is added to each flex item and as a
+              result, the length of the flex items has been changed.
+            </p>
+            <p class="text-format page-text highlight">
+              <span class="emphasis">NOTE: </span>It does not matter if the
+              flex-basis is before or after the width property, it will still
+              work. In fact, if using flex-basis, the width property can be
+              removed from the CSS rule completely.
+            </p>
+            <div class="code-img-section">
+              <img
+                src="../assets/images/flex-sizing-flex-basis-code-snippet.png"
+                alt="flex basis code example"
+                class="code-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item-sep">
+        <img
+          src="../assets/images/theme/two-color-trim.png"
+          alt=""
+          class="item-sep-img"
+        />
+      </div>
+      <div class="example-section">
+        <div id="min-width-tag" class="sub-title">
+          <h2>Min-Width Property</h2>
+        </div>
+        <div class="example-text">
+          <p class="text-format page-text">
+            We can also set the min-width for each flex-item. This will affect
+            all three width properties discussed above. This will have different
+            affects on a flex-item based on any preset widths. The min-width
+            determines the shrink potential of each flex item in which it is
+            set.
+          </p>
+          <div class="sub-sub-title">
+            <h3>Min-Width Smaller</h3>
+          </div>
+          <p class="text-format page-text">
+            If the min-width is smaller than the width or flex-basis properties,
+            then flexbox will use the width or flex-basis property.
+          </p>
+          <div class="sub-sub-title">
+            <h3>Min-Width Larger</h3>
+          </div>
+          <p class="text-format page-text">
+            If the min-width is larger than the width or flex-basis properties,
+            then flexbox will use the min-width over both the width or
+            flex-basis properties.
+          </p>
+          <div class="example-block">
+            <div class="coding-title">
+              <h3>Min-Width Example</h3>
+            </div>
+            <p class="text-format page-text">
+              In the example below, we see that the width of the length of the
+              flex item along the main axis is expanded from the 150 pixels in
+              the last example. As the device gets smaller or the screen
+              shrinks, the text will wrap down to the longest word as in the
+              example above. This will be the minimum length of the flex item.
+              After that, the flex items will begin to move off the screen.
+            </p>
+            <p class="text-format page-text highlight">
+              <span class="emphasis">TIP:</span> If using a laptop, adjusting
+              the size of the browser should show the content width in action.
+              For a tablet or smart phone, try rotating the device to see the
+              length affect.
+            </p>
+            <div class="example-container">
+              <div class="test-item example-four-item-one">Item 1 - Width</div>
+              <div class="test-item example-four-item-two">
+                Item 2 - Width with more text
+              </div>
+              <div class="test-item example-four-item-three">
+                Item 3 - This will be the longest line of text.
+              </div>
+            </div>
+            <a href="#back-to-top-tag" id="back-to-top-tag" class="back-to-top"
+              >Top</a
+            >
+          </div>
+          <div class="code-block">
+            <div class="coding-title">
+              <h3>Min-Width Code</h3>
+            </div>
+            <p class="text-format page-text">
+              Below is the code that needed to make this work. Here we see that
+              the min-width property is added to each flex item and as a result,
+              the length of the flex items has been changed.
+            </p>
+            <p class="text-format page-text highlight">
+              <span class="emphasis">NOTE: </span>I left both the width and
+              flex-basis properties so it could be seen that the min-width
+              overrides them both if the min-width length is larger than
+              either/both of them.
+            </p>
+            <div class="code-img-section">
+              <img
+                src="../assets/images/flex-sizing-min-width-code-snippet.png"
+                alt="flex basis code example"
+                class="code-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item-sep">
+        <img
+          src="../assets/images/theme/two-color-trim.png"
+          alt=""
+          class="item-sep-img"
+        />
+      </div>
+      <div class="example-section">
+        <div id="max-width-tag" class="sub-title">
+          <h2>Max-Width Property</h2>
+        </div>
+        <div class="example-text">
+          <p class="text-format page-text">
+            We can also set the max-width for each flex-item. This will affect
+            all three width properties discussed above. This will have different
+            affects on a flex-item based on any preset widths. The max-width
+            determines the growth potential of each flex item in which it is
+            set.
+          </p>
+          <div class="sub-sub-title">
+            <h3>Max-Width Larger</h3>
+          </div>
+          <p class="text-format page-text">
+            If the max-width is larger than the width or flex-basis properties,
+            then flexbox will use the width or flex-basis property.
+          </p>
+          <div class="sub-sub-title">
+            <h3>Max-Width Smaller</h3>
+          </div>
+          <p class="text-format page-text">
+            If the max-width is smaller than the width or flex-basis properties,
+            then flexbox will use the max-width over both the width or
+            flex-basis properties.
+          </p>
+          <div class="example-block">
+            <div class="coding-title">
+              <h3>Max-Width Example</h3>
+            </div>
+            <p class="text-format page-text">
+              In the example below, we see that the width of the length of the
+              flex item along the main axis is shrunk down from the 200 pixels
+              in the last example. As the device gets smaller or the screen
+              shrinks, the text will wrap down to the longest word as in the
+              example above. This will be the minimum length of the flex item.
+              After that, the flex items will begin to move off the screen.
+            </p>
+            <p class="text-format page-text highlight">
+              <span class="emphasis">TIP:</span> If using a laptop, adjusting
+              the size of the browser should show the content width in action.
+              For a tablet or smart phone, try rotating the device to see the
+              length affect.
+            </p>
+            <div class="example-container">
+              <div class="test-item example-five-item-one">Item 1 - Width</div>
+              <div class="test-item example-five-item-two">
+                Item 2 - Width with more text
+              </div>
+              <div class="test-item example-five-item-three">
+                Item 3 - This will be the longest line of text.
+              </div>
+            </div>
+            <a href="#back-to-top-tag" id="back-to-top-tag" class="back-to-top"
+              >Top</a
+            >
+          </div>
+          <div class="code-block">
+            <div class="coding-title">
+              <h3>Max-Width Code</h3>
+            </div>
+            <p class="text-format page-text">
+              Below is the code that needed to make this work. Here we see that
+              the max-width property is added to each flex item and as a result,
+              the length of the flex items has been changed.
+            </p>
+            <p class="text-format page-text highlight">
+              <span class="emphasis">NOTE: </span>I left both the width and
+              flex-basis properties so it could be seen that the max-width
+              overrides them both if the max-width length is less than
+              either/both of them.
+            </p>
+            <div class="code-img-section">
+              <img
+                src="../assets/images/flex-sizing-max-width-code-snippet.png"
+                alt="max width property code example"
+                class="code-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item-sep">
+        <img
+          src="../assets/images/theme/two-color-trim.png"
+          alt=""
+          class="item-sep-img"
+        />
+      </div>
+    </section>
+    <footer>
+      <p class="text-format page-text">created by M. Martens</p>
+      <p>copyright&copy;2023</p>
+    </footer>
+  </body>
+</html>

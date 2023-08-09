@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex-Shrink Property</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Tektur:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/flex-shrink.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="../assets/images/glowing-blue-lines-dark-background.jpg"
+        alt="image of blue swirl on black background"
+        class="header-img"
+      />
+      <h1 class="header-title">A Flexbox Study</h1>
+      <ul class="navbar">
+        <li class="navitems">
+          <a href="../index.html" class="navitem">Home</a>
+        </li>
+        <li class="navitems">
+          <a href="../pages/container-properties.html" class="navitem"
+            >Container Properties</a
+          >
+        </li>
+        <li class="navitems">
+          <a href="../pages/item-properties.html" class="navitem"
+            >Item Properties</a
+          >
+        </li>
+        <li class="navitems">
+          <a href="../pages/contact-us.html" class="navitem">Contact Us</a>
+        </li>
+        <li class="navitems">
+          <a href="../pages/about-us.html" class="navitem">About Us</a>
+        </li>
+      </ul>
+      <a
+        href="https://www.freepik.com/free-photo/glowing-blue-lines-dark-background-5083073.htm#query=technology&position=49&from_view=keyword&track=sph"
+        class="image-disclaimer"
+        >Image by starline on Freepik</a
+      >
+    </header>
+    <section class="main">
+      <div class="main-topic">
+        <div id="back-to-top-tag" class="main-title">
+          <h1>Flex-Shrink Property</h1>
+        </div>
+        <p class="text-format page-text">
+          The flex-shrink property is another of the flex sizing properties. It
+          shrinks the flex items from their preset sizes as the parent container
+          shrinks down on different devices where it is viewed. The flex-shrink
+          can accept as valid values zero and all positive values. It cannot
+          accept negative values. The default for this property is true or on.
+          So, there is no need to set this in the CSS file unless it is being
+          turned off.This must be set inside of each flex item where it is to be
+          changed.
+        </p>
+        <div class="item-list">
+          <ul>
+            <li><a href="#default-value-tag">Default Value</a></li>
+            <li><a href="#zero-value-tag">Zero Value</a></li>
+            <li><a href="#different-values-tag">Different Values</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="example-section">
+        <div id="default-value-tag" class="sub-title">
+          <h2>Default Value</h2>
+        </div>
+        <div class="example-text">
+          <p class="text-format page-text">
+            Unlike the flex-grow property, the flex-shrink property is defaulted
+            to a value of 1. This means that the flex items will shrink at the
+            same rate as the device gets smaller.
+          </p>
+          <div class="example-block">
+            <p class="text-format page-text">
+              Below, we have an example of a flex container with items without
+              adding any flex-shrink code to the CSS file.
+            </p>
+            <p class="text-format page-text highlight">
+              <span class="emphasis">TIP:</span> If using a laptop, adjusting
+              the size of the browser should show the flex-shrink property in
+              action. For a tablet or smart phone, try rotating the device to
+              see the shrinking affect.
+            </p>
+            <div class="example-container">
+              <div class="example-item example-one-item-one">Item 1</div>
+              <div class="example-item example-one-item-two">Item 2</div>
+              <div class="example-item example-one-item-three">Item 3</div>
+            </div>
+            <a href="#back-to-top-tag" id="back-to-top-tag" class="back-to-top"
+              >Top</a
+            >
+          </div>
+          <div class="code-block">
+            <p class="text-format page-text">
+              Below is the code that needed to make this work. However, for this
+              example this value is default so no code is needed to make it
+              work.
+            </p>
+            <div class="code-img-section">
+              <img src="" alt="" class="code-img" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item-sep">
+        <img
+          src="../assets/images/theme/two-color-trim.png"
+          alt=""
+          class="item-sep-img"
+        />
+      </div>
+      <div id="zero-value-tag" class="example-section">
+        <div class="sub-title">
+          <h2>Zero Value</h2>
+        </div>
+        <div class="example-text">
+          <p class="text-format page-text">
+            If the item should not shrink, it is possible to turn it off. As the
+            other items in the flex container begin to shrink, that item will
+            remain its preset size.
+          </p>
+          <div class="example-block">
+            <p class="text-format page-text">
+              Below, we have an example of a flex container with items without
+              adding any flex-shrink code to the CSS file.
+            </p>
+            <p class="text-format page-text highlight">
+              <span class="emphasis">TIP:</span> If using a laptop, adjusting
+              the size of the browser should show the flex-shrink property in
+              action. For a tablet or smart phone, try rotating the device to
+              see the shrinking affect.
+            </p>
+            <div class="example-container">
+              <div class="example-item example-two-item-one">Item 1</div>
+              <div class="example-item example-two-item-two">Item 2</div>
+              <div class="example-item example-two-item-three">Item 3</div>
+            </div>
+            <a href="#back-to-top-tag" id="back-to-top-tag" class="back-to-top"
+              >Top</a
+            >
+          </div>
+          <div class="code-block">
+            <p class="text-format page-text">
+              Below is the code that needed to make this work. This code will
+              turn off shrinking so when the container gets smaller than size of
+              the item the item will push out past the container.
+            </p>
+            <div class="code-img-section">
+              <img
+                src="../assets/images/flex-shrink-zero-code-snippet.png"
+                alt="code to turn flex shrink off"
+                class="code-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item-sep">
+        <img
+          src="../assets/images/theme/two-color-trim.png"
+          alt=""
+          class="item-sep-img"
+        />
+      </div>
+      <div id="different-values-tag" class="example-section">
+        <div class="sub-title">
+          <h2>Different Numeric Values</h2>
+        </div>
+        <div class="example-text">
+          <p class="text-format page-text">
+            If several or all of the items need to be shrunk at different rates,
+            this can be done by setting each of the containers child elements to
+            different values other than zero. Those elements that do not need to
+            be shrunk can be set to zero.
+          </p>
+          <div class="example-block">
+            <p class="text-format page-text"></p>
+            <p class="text-format page-text highlight">
+              <span class="emphasis">TIP:</span> If using a laptop, adjusting
+              the size of the browser should show the flex-shrink property in
+              action. For a tablet or smart phone, try rotating the device to
+              see the shrinking affect.
+            </p>
+            <div class="example-container">
+              <div class="example-item example-three-item-one">Item 1</div>
+              <div class="example-item example-three-item-two">Item 2</div>
+              <div class="example-item example-three-item-three">Item 3</div>
+            </div>
+            <a href="#back-to-top-tag" id="back-to-top-tag" class="back-to-top"
+              >Top</a
+            >
+          </div>
+          <div class="code-block">
+            <p class="text-format page-text">
+              Below is the code that needed to make this work. See how the first
+              two elements are set to 3 and 2, respectively. These will shrink
+              at different rates. The third element is set to zero and will not
+              shrink at all.
+            </p>
+            <div class="code-img-section">
+              <img
+                src="../assets/images/flex-shrink-different-values-code-snippet.png"
+                alt="code to turn flex shrink off"
+                class="code-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item-sep">
+        <img
+          src="../assets/images/theme/two-color-trim.png"
+          alt=""
+          class="item-sep-img"
+        />
+      </div>
+    </section>
+
+    <footer>
+      <p class="text-format page-text">created by M. Martens</p>
+      <p>copyright&copy;2023</p>
+    </footer>
+  </body>
+</html>
